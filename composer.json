@@ -1,0 +1,87 @@
+{
+    "name": "ernestdefoe/dossier",
+    "description": "A member's professional profile on Flarum: headline and bio, a work and education timeline drawn to scale, skills with levels, languages, certificates, links and what they are open to. Every section has its own visibility, and the profile tab loads only when someone opens it.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "profile",
+        "resume",
+        "cv",
+        "portfolio",
+        "skills",
+        "timeline"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ernest Defoe",
+            "email": "ernestdefoe@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/ernestdefoe/dossier",
+    "support": {
+        "issues": "https://github.com/ernestdefoe/dossier/issues",
+        "source": "https://github.com/ernestdefoe/dossier"
+    },
+    "funding": [
+        {
+            "type": "other",
+            "url": "https://buymeacoffee.com/ernestdefoe"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0"
+    },
+    "require-dev": {
+        "flarum/phpstan": "^2.0",
+        "flarum/testing": "^2.0",
+        "ernestdefoe/anthology": "^1.1"
+    },
+    "suggest": {
+        "ernestdefoe/projects": "Shows the member's projects on their dossier.",
+        "ernestdefoe/anthology": "Shows the series a writer has published on their dossier."
+    },
+    "autoload": {
+        "psr-4": {
+            "Ernestdefoe\\Dossier\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ernestdefoe\\Dossier\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Dossier",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-id-card",
+                "backgroundColor": "#1f6f5c",
+                "color": "#fff"
+            },
+            "optional-dependencies": [
+                "ernestdefoe/projects",
+                "ernestdefoe/anthology"
+            ]
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "@test:integration"
+        ],
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php",
+        "analyse:phpstan": "phpstan analyse"
+    },
+    "scripts-descriptions": {
+        "test": "Runs all tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
+        "analyse:phpstan": "Run static analysis"
+    }
+}
