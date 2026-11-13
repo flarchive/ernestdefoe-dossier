@@ -2,13 +2,16 @@
 
 > **Read-only archive of released versions of ernestdefoe/dossier.** Not for installation: use [Packagist](https://packagist.org/packages/ernestdefoe/dossier) or the [upstream repository](https://github.com/ernestdefoe/dossier).
 
-**0** versions archived · Latest: [`1.2.0`](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.2.0) · License: `MIT` · Flarum: `^2.0`
+**4** versions archived · Latest: [`1.2.0`](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.2.0) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `1.0.0` | 2026-11-09 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.0.0) |
+| `1.1.0` | 2026-11-09 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.1.0) |
+| `1.1.1` | 2026-11-13 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.1.1) |
+| `1.2.0` | 2026-11-13 | `^2.0` | [Browse](https://github.com/flarchive/ernestdefoe-dossier/tree/archive/v1.2.0) |
 
 Catalog entry: [packages/ernestdefoe-dossier.json](https://github.com/flarchive/archive-index/blob/main/packages/ernestdefoe-dossier.json)
 
