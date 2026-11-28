@@ -1,0 +1,159 @@
+// The Dossier admin page: the "Open to" chips and the skill catalogue.
+.DossierAdmin-section {
+  h3 {
+    color: var(--heading-color);
+    margin-top: 0;
+  }
+
+  .helpText {
+    color: var(--muted-color);
+    margin-bottom: 12px;
+  }
+}
+
+.DossierAdmin-rows {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  max-width: 480px;
+}
+
+.DossierAdmin-row,
+.DossierAdmin-add,
+.DossierAdmin-categoryHead {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+
+  .FormControl {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.DossierAdmin-add {
+  max-width: 480px;
+}
+
+.DossierAdmin-actions,
+.DossierAdmin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.DossierAdmin-category {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: var(--control-bg);
+  max-width: 720px;
+
+  .DossierAdmin-categoryHead .FormControl {
+    max-width: 320px;
+    font-weight: 700;
+  }
+}
+
+.DossierAdmin-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.DossierAdmin-skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 4px 3px 10px;
+  border-radius: 999px;
+  background: var(--body-bg);
+  color: var(--text-color);
+  font-size: 13px;
+}
+
+.DossierAdmin-uses {
+  color: var(--muted-color);
+  font-size: 11px;
+}
+
+.DossierAdmin-remove {
+  border: 0;
+  background: none;
+  color: var(--muted-color);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--control-danger-color);
+  }
+}
+
+.DossierAdmin-pendingHeading {
+  margin-top: 30px !important;
+}
+
+.DossierAdmin-pending {
+  width: 100%;
+  max-width: 720px;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 6px 8px;
+    text-align: left;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--control-bg);
+  }
+
+  th {
+    color: var(--muted-color);
+    font-size: 12px;
+  }
+
+  td .FormControl {
+    min-width: 0;
+    max-width: 200px;
+  }
+}
+
+.DossierAdmin-pendingActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.DossierAdmin-none {
+  color: var(--muted-color);
+}
+
+@media (max-width: 767px) {
+  .DossierAdmin-pending {
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--control-bg);
+    }
+
+    td {
+      border: 0;
+      min-width: 0;
+    }
+  }
+}
+
+// Inputs on the grey category card need the page's own background to show as fields.
+.DossierAdmin-category .FormControl {
+  background: var(--body-bg);
+}
